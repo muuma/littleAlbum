@@ -1,0 +1,25 @@
+<%-include('header', {title: 'Upload Album'})%>
+
+<div class="main">
+	<div class="album-wrap">
+		<form action="/uploads" method="post" enctype="multipart/form-data" class="was-validated">
+			<div class="form-row">
+				<div class="form-group col-md-4 mb-3">
+					<select class="custom-select" required>
+						<option value="">选择相册</option>
+						<% for(var i = 0; i < allAlbums.length; i++){ %>
+							<option value="<%= i %>"><%= allAlbums[i] %></option>
+						<% } %>
+					</select>
+					<div class="invalid-feedback">还没有选择要上传到哪个相册哦~</div>
+				</div>
+				<div class="custom-file col-md-4 mb-3">
+					<input type="file" class="custom-file-input" id="validatedCustomFile" required multiple />
+					<label class="custom-file-label" for="validatedCustomFile">选择要上传的图片.</label>
+					<div class="invalid-feedback">还没有选择图片哦~</div>
+				</div>
+			</div>
+			<button type="submit" class="btn btn-primary mb-2">上传</button>
+		</form>
+	</div>
+</div>

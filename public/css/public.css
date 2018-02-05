@@ -1,0 +1,25 @@
+nav{
+	margin-bottom: 30px;
+}
+.main{
+	width: 80%;
+	margin: 0 auto;
+}
+.album-wrap ul{
+	padding: 0;
+	overflow: hidden;
+}
+.card{
+	float: left;
+	margin-bottom: 20px;
+	margin-right: 20px;
+}
+.modal-dialog{
+	max-width: 80%;
+}
+.modal-body{
+	text-align: center;
+}
+.modal-body img{
+	max-width: 100%;
+}

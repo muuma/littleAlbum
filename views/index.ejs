@@ -1,0 +1,16 @@
+<%-include('header', {title: 'Album Index'})%>
+
+<div class="main">
+	<ul class="album-wrap">
+		<% for(var i = 0; i < albums.length; i++) {%>
+			<div class="card" style="width: 18rem;">
+				<img class="card-img-top" src="/images/cover.jpg" alt="Cover" />
+				<div class="card-body">
+					<h5 class="card-title"><%= albums[i] %></h5>
+					<p class="card-text">This is an album directory.</p>
+					<a href="<%= albums[i] %>" class="btn btn-primary">Details</a>
+				</div>
+			</div>
+		<% } %>
+	</ul>
+</div>
