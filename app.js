@@ -19,9 +19,7 @@ app.get('/', router.showIndex);
 app.get('/:albumName', router.showAlbum);
 // 上传页面
 app.get('/up', router.showUp);
-app.post('/up', function(req, res){
-
-});
+app.post('/up', router.upLoads);
 
 // 404 页面
 app.use(router.hanldError);
